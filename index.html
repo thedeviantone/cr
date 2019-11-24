@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <a href="#">
+            <img id="logo" class="logo" src="./logo.png" />
+        </a>
+        <div id="navBar" class="">
+            <div class="navSection">
+                <div class="menuOption" href="#" onclick="openContent(event, 'home')">home</div>
+                <div class="menuOption" href="#" onclick="openContent(event, 'about')">about</div>
+                <div class="menuOption" href="#" onclick="openContent(event, 'events')">events</div>
+                <div class="menuOption" href="#" onclick="openContent(event, 'contact')">contact</div>
+                <div class="menuOption" href="#" onclick="openContent(event, 'login')">login</div>
+            </div>
+        </div>
+
+        <div id="main" class="">
+            <div id="home" class="content">
+                <div id="" class="homeSection">
+                    <p>To inspire our leaders and members to be the most organized, advanced, equipped, financially stable organization, full of integrity in the motorcycling industry and the kingdom of God.</p>
+                </div>
+                <div id="" class="homeSection button" onclick="openContent(event, 'about')">discover</div>
+            </div>
+
+            <div id="about" class="content">
+                <div id="whoWeAre" class="aboutSection"> <!--  -->
+
+                </div>
+                <div id="leadership" class="aboutSection"> <!--  -->
+
+                </div>
+            </div>
+
+            <div id="events" class="content">
+                <div id="meetingInfo" class="eventsSection"> <!--  -->
+                    <div id="meetingInfoAddress" class="eventSubSection"> <!--  -->
+                        <h2>chapter meetings</h2>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="meetingInfoDateTime" class="eventSubSection" style="flex: 2;"> <!-- if [meeting night] show [meeting tonight w/ countdown]. -->
+                        <p>Chapter meetings are held every 2nd Sunday of the month (except for May and December).</p>
+                        <p><b>Date |</b>     Sunday</p>
+                        <p><b>Time |</b>     6:00pm</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="meetingInfoDirections" class="eventSubSection" style="flex: 2;"> <!-- google maps -->
+                        <p>Rudy's "Country Store" and Bar-B-Q on I20</p>
+                        <p><a href="https://www.google.com/maps/dir//Rudy's+%22Country+Store%22+and+Bar-B-Q,+451+E+Interstate,+I-20,+Arlington,+TX+76018/@32.6780347,-97.1036032,17.79z/data=!4m8!4m7!1m0!1m5!1m1!1s0x864e62bce785502f:0xc64ddbc3f432839e!2m2!1d-97.1031895!2d32.6788969">451 E Interstate Hwy 20, Arlington, Texas 76018</a></p>
+                        <img src="https://rudys-cdn.r.worldssl.net/img/logo.svg" />
+                    </div>
+                </div>
+                <div id="eventsInfo" class="eventsSection"> <!--  -->
+                    <div id="eventsAddress" class="eventSubSection"> <!--  -->
+                        <h2>motoGP watch parties</h2>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="eventsDateTime" class="eventSubSection" style="flex: 2;"> <!-- if [meeting night] show [meeting tonight w/ countdown]. -->
+                        <p>Watch parties are held on race Sunday at 3pm CST. Time subject to change during the COTA race.</p>
+                        <p><b>Date |</b>     Sunday</p>
+                        <p><b>Time |</b>     3:00pm</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div id="eventsDirections" class="eventSubSection" style="flex: 2;"> <!-- google maps -->
+                        <p>Rudy's "Country Store" and Bar-B-Q on I20</p>
+                        <p><a href="https://www.google.com/maps/dir//Rudy's+%22Country+Store%22+and+Bar-B-Q,+451+E+Interstate,+I-20,+Arlington,+TX+76018/@32.6780347,-97.1036032,17.79z/data=!4m8!4m7!1m0!1m5!1m1!1s0x864e62bce785502f:0xc64ddbc3f432839e!2m2!1d-97.1031895!2d32.6788969">451 E Interstate Hwy 20, Arlington, Texas 76018</a></p>
+                        <img src="https://rudys-cdn.r.worldssl.net/img/logo.svg" />
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact" class="content">
+                <div id="general" class="contactSection"> <!-- form with captcha v3? need a free option. -->
+
+                </div>
+                <div id="officers" class="contactSection"> <!-- pictures, title, road name, and emails only -->
+
+                </div>
+            </div>
+
+            <div id="login" class="content">
+                <div id="memberLogin" class="loginSection"> <!-- not real authentication, just a way to help avoid spam. -->
+                    <h2>This section is for chapter members only</h2>
+                    <br />
+                    <p>CMA number  <input id="cmnNumber" type="text" name="cmnNumber"></p>
+                    <div class="button" onclick="memberLogin(event, 'memberLinks')">login</div>
+                </div>
+                <div id="memberLinks" class="loginSection"> <!-- common chapter links. -->
+                    <div id="links" class=""> <!--  -->
+                        <h2>Chapter resources</h2>
+                        <a href="https://discordapp.com/invite/QMBZPWM/login" target="_blank">Discord server</a>
+                        <a href="http://christrockets.com/reports" target="_blank">File activity reports</a>
+                        <a href="http://christrockets.com/rfs" target="_blank">Our current Run for the Son effort</a>
+                        <a href="http://christrockets.com/secretary" target="_blank">File quarterly reports [Secretary only]</a>
+                        <a href="http://christrockets.com/merch" target="_blank">Christ Rockets merch store</a>
+                        <a href="http://www.cmausa.org/!UserFiles/CMA%20Handbook%202019.pdf" target="_blank">Download a copy of the CMA handbook</a>
+                        <a href="https://shop.cmausa.org/" target="_blank">Official CMA merch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer" class="">
+                <div class="">
+                    <a class="fa fa-facebook" href="https://christrockets.com/facebook"></a>
+                    <a class="fa fa-instagram" href="https://christrockets.com/instagram"></a>
+                </div>
+            </div>
+    </body>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+        }
+
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100vw;;
+            position: relative;
+        }
+
+        .content {
+            display: none;
+            width: 100vw;
+            height: 100vh;
+            background-image: black;
+            overflow: hidden;
+            clear: both;
+        }
+
+        #home {
+            background-image: url('./home.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 35vh 19vw 30vh;
+        }
+
+        .homeSection, .loginSection {
+            text-align: center;
+            color: white;
+            background-color:#000000ab;
+            border: solid;
+            border-width: 1px;
+            z-index: 1;
+        }
+
+        .homeSection.button, #memberLogin .button {
+            width: max-content;
+            margin: auto;
+        }
+
+        #login {
+            background-image: url('./login.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: ease-in-out 500ms;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        #memberLogin.loginSection {
+            display: flex;
+            padding: 15vh 15vw;
+            width: max-content;
+            margin: auto;
+            flex-direction: column;
+        }
+
+        .loginSection {
+            display: none;
+        }
+
+        #memberLinks {
+            justify-content: center;
+        }
+
+        #links a {
+            text-decoration: none;
+            color:white;
+            flex: 1;
+            border: solid;
+            border-width: 1px;
+            margin: 1vh 1vw;
+            padding: 1vh 1vh;
+            transition: ease-in-out 500ms;
+            background-color: #0000009e;
+        }
+
+        #links a:hover {
+            background-size: 600%;
+            background-image: linear-gradient(45deg,#0000, #ff000082,#ffa50096);
+            animation: bg-animation 1.5s infinite alternate;
+        }
+
+        #links {
+            margin: 5vh 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        #events {
+            background-image: url('./events.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: ease-in-out 500ms;
+            display: none;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .eventsSection {
+            background-color: #0009;
+            flex: 1;
+            margin: 15vh 2vw 7vh;
+            border: solid;
+            border-color: white;
+            border-width: 1px;
+            padding: 2vw 2vh;
+            transition: ease-in-out 500ms;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .eventsSection:hover {
+            background-color: #000000b8;
+        }
+
+        .eventSubSection {
+            flex: 1;
+        }
+
+        .eventSubSection img {
+            height: 150px;
+        }
+
+        .eventSubSection b {
+            font-size: larger;
+        }
+
+        .eventSubSection a {
+            text-decoration: none;
+            color:white;
+        }
+
+        .eventSubSection a:hover {
+            background-size: 600%;
+            background-image: linear-gradient(45deg,#0000, #ff000082,#ffa50096);
+            animation: bg-animation 1.5s infinite alternate;
+        }
+
+        #contact {
+            background-image: url('file:///C:/Users/Nico_Laptop/Downloads/Organized%20files/Pictures/Panigale/33945028_10156562633351907_6643099236109910016_o_10156562633346907.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: ease-in-out 500ms;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 15vh 2vw 7vh;
+        }
+
+
+        .contactSection {
+            background-color: #0009;
+            flex: 1;
+            margin: 0vh 0vw 1vh;
+            border: solid;
+            border-color: white;
+            border-width: 1px;
+            padding: 2vw 2vh;
+            transition: ease-in-out 500ms;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        #about {
+            background-image: url('./about.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: ease-in-out 500ms;
+            display: none;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .aboutSection {
+            background-color: #0009;
+            flex: 1;
+            margin: 15vh 2vw 7vh;
+            border: solid;
+            border-color: white;
+            border-width: 1px;
+            padding: 2vw 2vh;
+            transition: ease-in-out 500ms;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+            z-index: 1;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            height: 5vh;
+            width: 100vw;
+            background-color: #000000bd;
+            position: fixed;
+            bottom: 0;
+        }
+
+
+
+        #navBar {
+            height: 10vh;
+            width: 100vw;
+            background-image: linear-gradient(0deg, #0000,black);
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+
+        #logo {
+            height: 45vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .navSection {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            float: right;
+            border: solid;
+            border-color: rgba(255, 255, 255, 0);
+            border-width: 0 0 1px 0;
+            max-width: max-content;
+            min-width: min-content;
+            transition: ease-in-out 500ms;
+        }
+
+        .navSection:hover {
+            border-color: white;
+            transition: ease-in-out 500ms;
+        }
+
+        .menuOption {
+            padding: 15px;
+            color: white;
+        }
+
+        @keyframes bg-animation {
+            0% {
+                background-position: left;
+            }
+            100% {
+                background-position: right;
+            }
+        }
+
+        .menuOption:hover {
+            cursor: pointer;
+            background-size: 600%;
+            background-image: linear-gradient(45deg,#0000, #ff000082,#ffa50096);
+            animation: bg-animation 1.5s infinite alternate;
+        }
+
+        .button {
+            padding: 10px;
+            background-color: #00000085;
+            border: solid;
+            border-width: 1px;
+            text-decoration: none;
+            transition: ease-in-out 500ms;
+        }
+
+        .button:hover {
+            background-color: #000000c7;
+            cursor: pointer;
+            padding: 10px 4vw;
+        }
+
+        .divider {
+            border: solid;
+            border-width: 0 0 1px 0;
+            border-color: #ffffff70;
+        }
+
+        .fa {
+            padding: 5px;
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+    </style>
+
+    <script>
+        const id = ["","",""];
+
+        function openContent(evt, sectionName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(sectionName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+
+        function memberLogin(evt, sectionName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("loginSection");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            document.getElementById(sectionName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+        
+    </script>
+</html>
